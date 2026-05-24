@@ -1,12 +1,12 @@
 # claude-team
 
-Lance Claude Code avec le mode équipes expérimental activé.
+Launches Claude Code with the experimental teams mode enabled.
 
-## Ce que ça fait
+## What it does
 
-- Active `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`
-- Affiche "Claude Team" dans le titre de la fenêtre/onglet terminal
-- Passe tous les arguments à `claude` sans modification
+- Enables `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`
+- Displays "Claude Team" in the terminal window/tab title
+- Forwards all arguments to `claude` unchanged
 
 ## Installation
 
@@ -14,21 +14,21 @@ Lance Claude Code avec le mode équipes expérimental activé.
 ./install.sh
 ```
 
-Crée un symlink `~/.local/bin/claude-team` → ce répertoire.  
-`~/.local/bin` doit être dans ton `PATH` (c'est déjà le cas si `claude` fonctionne).
+Creates a symlink `~/.local/bin/claude-team` → this directory.
+`~/.local/bin` must be in your `PATH` (which is already the case if `claude` works).
 
 ## Usage
 
 ```bash
-claude-team                    # session interactive
-claude-team -c                 # reprendre la dernière conversation
-claude-team --model opus       # choisir le modèle
-claude-team --print "..."      # mode non-interactif
+claude-team                    # interactive session
+claude-team -c                 # resume the last conversation
+claude-team --model opus       # choose the model
+claude-team --print "..."      # non-interactive mode
 ```
 
-Tous les flags de `claude` sont supportés.
+All `claude` flags are supported.
 
-## Désinstallation
+## Uninstall
 
 ```bash
 rm ~/.local/bin/claude-team
