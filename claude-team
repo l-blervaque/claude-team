@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-printf '\033]0;Claude Team\007'
-CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 exec claude "$@"
+CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 exec claude --name "Claude Team" "$@"
